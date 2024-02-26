@@ -16,7 +16,7 @@ function App() {
     <div className='app'>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <h1 className="font-color-white">Hello, dude!</h1>
+        <h1 className="">Hello, dude!</h1>
       </ThemeProvider>
     </div>
   )
