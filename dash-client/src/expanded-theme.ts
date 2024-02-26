@@ -1,6 +1,6 @@
 // probably don't need this import
 // eslint-disable-next-line 
-import { Palette, PaletteColor } from '@mui/material/styles/createPalette';
+// import { Palette, PaletteColor } from '@mui/material/styles/createPalette';
 
 /* This is extending these properties to the MUI theme typescript that has already been created. This
 enables us to use these properties in our theme settings.
