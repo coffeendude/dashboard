@@ -46,4 +46,29 @@
 * We create the expanded-theme.ts file to add the gradient colors we brought into our theme.ts
 
 
+# Dependencies on the Server Side:
+
+* express - framework for nodejs to handle apis
+* body-parser - handles json files coming from the body of a request
+* Cors - cross origin resource sharing requests so that you can call from a different url
+* dotenv - to handle env variables
+* helmet - api endpoint security
+* morgan - for handling console.logs, anhtime we hit an endpoint it will log info 
+* mongoose - orm used for mongodb
+* mongoose-currency - so that we can handle currency and numbers for currency values
+
+`npm i express body-parser cors dotenv helmet morgan mongoose mongoose-currency`
+
+## Dev Dependencies for server side:
+
+* nodemon - allows us to run server and automaticallly refresh when we change files 
+
+`npm i -D nodemon`
+
+## Note:
+To use imports we have to go to the package.json in dash-server and add just below "main":
+"type": "module"
+
+We also need to add in our package.json in scripts:
+"dev": "nodemon index.js"
 
