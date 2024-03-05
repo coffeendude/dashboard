@@ -1,5 +1,6 @@
 // Boiler plate for Redux Tool kit
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { GetKpisResponse } from "./types";
 
 export const api = createApi({
     // Where the data is being fetched from
@@ -10,7 +11,7 @@ export const api = createApi({
     tagTypes: ["Kpis"],
     endpoints: (build) => ({
         // Where we create our API endpoints
-        getKpis: build.query<void, void>({
+        getKpis: build.query<Array<GetKpisResponse>, void>({
             query: () => "kpi/kpis/",
             providesTags: ["Kpis"],
         }),
