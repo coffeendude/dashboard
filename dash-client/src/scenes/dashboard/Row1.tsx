@@ -17,7 +17,7 @@ const Row1 = () => {
             data[0].monthlyData.map(({ month, revenue }) => {
                 return {
                     // grabs the first three letters of the month
-                    name: month.substring(0, 3),
+                    name: month.charAt(0).toUpperCase() + month.substring(0, 3).slice(1),
                     revenue,
                 }
             })
@@ -31,7 +31,7 @@ const Row1 = () => {
             data[0].monthlyData.map(({ month, revenue, expenses }) => {
                 return {
                     // grabs the first three letters of the month
-                    name: month.substring(0, 3),
+                    name: month.charAt(0).toUpperCase() + month.substring(0, 3).slice(1),
                     revenue,
                     expenses,
                 }
@@ -45,7 +45,7 @@ const Row1 = () => {
             data[0].monthlyData.map(({ month, revenue, expenses }) => {
                 return {
                     // grabs the first three letters of the month
-                    name: month.substring(0, 3),
+                    name: month.charAt(0).toUpperCase() + month.substring(0, 3).slice(1),
                     revenue: revenue,
                     profit: (revenue - expenses).toFixed(2),
                 }
