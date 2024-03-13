@@ -72,3 +72,5 @@ To use imports we have to go to the package.json in dash-server and add just bel
 We also need to add in our package.json in scripts:
 "dev": "nodemon index.js"
 
+Adding the last dependency for the simple ML computation of Linear Regression in js.
+`npm install regression`
